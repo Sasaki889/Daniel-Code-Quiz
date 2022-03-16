@@ -21,7 +21,7 @@ export class QuizBuilder {
 
         // events
         this.onQuizFinish = new Event();
-        gutil.debugPrint("Will's handy Quiz-Builder class, loaded!");
+        gutil.debugPrint("loaded!");
     }
 
     addQuestion(question) {

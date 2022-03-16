@@ -1,0 +1,83 @@
+
+ <!DOCTYPE html>
+
+ <html>
+     <head>
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link rel="stylesheet" href="./resources/workspace/css/global-default.css">
+         <link rel="stylesheet" href="./resources/workspace/css/main-theme.css">
+         <title>Quiz</title>
+     </head>
+
+     <body>
+
+        <!-- primary content wrapper -->
+         <div class="abs-max-height">
+
+            <!-- timer/highscores info div -->
+            <div class="top-bar">
+                <div id="top-bar-info">
+                    <button class="red-nav-button">View Highscores</button>
+                    <p>Timer: 00:00</p>
+                </div>
+            </div>
+
+            <!-- secondary content wrapper for centering -->
+            <div class="horizontal-center vertical-center rel-max-height">
+
+
+                <!-- main intro heading of page -->
+                <header id="intro-screen" class="large-padding">
+                    <h1>JavaScript Quiz</h1>
+                    <div>
+                        <p>Welcome to the JavaScript code quiz!Get started, click "Start Quiz" below.</p>
+                        <button class="start-quiz-button red-nav-button" id="start-quiz-button">Start Quiz</button>
+                    </div>
+                </header>
+
+                <!-- main quiz content -->
+                <main>
+                
+                    <section aria-labelledby="question-title" id="question-screen" class="question-screen medium-padding">
+                        <h2 id="question-title" class="question-title"></h2>
+                        <ul>
+                            
+                        </ul>
+                        <footer id="question-feedback" class="question-feedback">
+                            <p>you got the wrong answer.</p>
+                        </footer>
+                    </section>
+
+                    
+                    <section aria-labelledby="quiz-complete-title" id="finish-screen" class="finish-screen">
+                        <h2 id="quiz-complete-title">Quiz Complete!</h2>
+                        <p>Final score: 0</p>
+                        <div id="score-entry" class="score-entry">
+                            <label for="">Enter initials:</label>
+                            <input type="text" placeholder="Initials Here">
+                            <button class="red-nav-button">submit</button>
+                        </div>
+                    </section>
+
+                    
+                    <section aria-labelledby="highscores-title" id="highscores-screen" class="highscores-screen">
+                        <h2 id="highscores-title">Highscores:</h2>
+                        <ol>
+                           
+                        </ol>
+                        <button id="go-back-btn">Go back</button>
+                        <button id="clear-scores-btn" class="red-nav-button">Clear scores</button>
+                    </section>
+                </main>
+
+            
+            </div>
+
+       
+         </div>
+
+         
+         <script type="module" src="./resources/workspace/js/main.js"></script>
+     </body>
+ </html>
+
